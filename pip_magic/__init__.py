@@ -2,18 +2,17 @@
 import this in ipython and use pip magically without ! and correct version !
 """
 
-__version__ ='0.2'
+__version__ ='0.2.1'
 
 
 from IPython.core.magic import register_line_magic
-import pip.commands as c
+import pip as _pip
 
 try:
     @register_line_magic
     def pip(line):
-        if line.startswith('install '):
-            line=line[8:]
-        c.install.InstallCommand().main([line.strip()])
+        args = [s for s in line.split(' ') if s]
+        _pip.main(args)
 except Exception:
     pass # alow flit to import and get version number
 
