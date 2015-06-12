@@ -7,11 +7,12 @@ __version__ ='0.2.1'
 
 from IPython.core.magic import register_line_magic
 import pip as _pip
+import shlex
 
 try:
     @register_line_magic
     def pip(line):
-        args = [s for s in line.split(' ') if s]
+        args = [s for s in shlex.split(line) if s]
         _pip.main(args)
 except Exception:
     pass # alow flit to import and get version number
