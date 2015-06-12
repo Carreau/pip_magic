@@ -11,7 +11,9 @@ import pip.commands as c
 try:
     @register_line_magic
     def pip(line):
-        c.install.InstallCommand().main([line.strip('install').strip()])
+        if line.startswith('install '):
+            line=line[8:]
+        c.install.InstallCommand().main([line.strip()])
 except Exception:
     pass # alow flit to import and get version number
 
