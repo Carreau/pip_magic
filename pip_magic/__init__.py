@@ -15,6 +15,4 @@ try:
         args = [s for s in shlex.split(line) if s]
         _pip.main(args)
 except Exception:
-    pass # alow flit to import and get version number
-
-# We delete these to avoid name conflicts for automagic to work
+    pass # allow flit to import and get version number
