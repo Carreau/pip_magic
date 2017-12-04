@@ -19,4 +19,31 @@ Installing collected packages: pip-magic
 Successfully installed pip-magic-0.2.1
 
 In [3]: ## so recursive !
-````
+```
+
+# Why ?
+
+See [this twitter thread](https://twitter.com/amuellerml/status/932671416150962176), the package pre-date this thread but it's a good example:
+
+Andreas Mueller
+
+> Is there a good succinct guide to how to figure out which Python environment you're in and how to install stuff in the right environment that's suitable for beginners? cc @jakevdp (also if there's not Jake, can you write one ;)
+
+Me:
+
+> pip_magic: pypi.python.org/pypi/pip_magic use pip from within IPython/Notebook and it install in same env you're in.
+
+AM:
+
+> That looks great, but also lacks a write-up explaining the problem ;)
+
+Me: 
+
+> Can I embed your tweet in the readme ?
+
+AM:
+
+> Lol sure. Though it does expose me as the naysayer that I am ;) (and my tendency to complain on Twitter but not do anything productive lol)
+
+
+
