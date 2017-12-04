@@ -1,0 +1,12 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "pip_magic"
+author = "Matthias Bussonnier"
+author-email = "bussonniermatthias@gmail.com"
+home-page = "https://github.com/Carreau/pip_magic"
+classifiers = ["License :: OSI Approved :: MIT License"]
+description-file = "Readme.md"
+
